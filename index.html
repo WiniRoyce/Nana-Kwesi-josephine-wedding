@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding E-Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="ecard-container">
+        <!-- Welcome Section -->
+        <div id="welcomeSection" class="ecard">
+            <h1>You're Invited!</h1>
+            <p>Tap to reveal the invitation</p>
+        </div>
+
+        <!-- Invitation Details Section -->
+        <div id="invitationDetails" class="ecard hidden">
+            <h2>Nana Kwesi Ansah Junior <br>&<br> Josephine Akua Baah</h2>
+            <p>We are delighted to invite you to celebrate our special day!</p>
+            <p>Date: Saturday, January 11, 2024</p>
+            <p>Venue: Christ Sanctuary Auditorium, Accra</p>
+            <p>40 Coconut Avenue, Ts3 Addo</p>
+            <p>Behind Trade Fair, Accra. GL-071-7969</p>
+            <p>Time: 10:00 AM</p>
+
+            <!-- Audio Controls -->
+            <div class="audio-controls">
+                <button id="playPauseBtn">Play Music</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="wedding-song.mp3.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

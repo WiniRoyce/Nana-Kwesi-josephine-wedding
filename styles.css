@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #fffaf3; /* Soft ivory background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* E-Card Container */
+.ecard-container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: linear-gradient(145deg, #fff7e6, #fdebd3); /* Subtle gold gradient */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #d4af37; /* Gold border */
+}
+
+/* Welcome Section */
+.ecard {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.ecard h1 {
+    font-size: 2rem;
+    color: #b97b4a; /* Rich terracotta */
+    margin-bottom: 10px;
+}
+
+.ecard p {
+    font-size: 1.1rem;
+    color: #7d5a50; /* Warm cocoa brown */
+    margin-bottom: 0;
+}
+
+/* Invitation Details */
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Invitation Details Styling */
+.ecard-details h2 {
+    font-size: 1.8rem;
+    color: #d4af37; /* Gold */
+    margin-bottom: 15px;
+}
+
+.ecard-details p {
+    font-size: 1.1rem;
+    color: #4e342e; /* Deep chocolate brown */
+    margin-bottom: 10px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Audio Controls */
+.audio-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-controls button {
+    background-color: #d4af37; /* Gold */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.audio-controls button:hover {
+    background-color: #b8860b; /* Darker gold on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #welcomeSection h1 {
+        font-size: 1.5rem;
+    }
+
+    #welcomeSection p,
+    #invitationDetails p {
+        font-size: 1rem;
+    }
+
+    .audio-controls button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
